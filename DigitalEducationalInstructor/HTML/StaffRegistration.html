@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<title>W3.CSS Template</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+
+
+<style>
+    html, body, h1, h2, h3, h4, h5 {
+        font-family: "Raleway", sans-serif
+    }
+
+
+    .switch-field {
+        font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+        overflow: hidden;
+    }
+
+        .switch-field input {
+            position: absolute !important;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            width: 1px;
+            border: 0;
+            overflow: hidden;
+        }
+
+        .switch-field label {
+            float: left;
+        }
+
+        .switch-field label {
+            display: inline-block;
+            width: 100px;
+            background-color: #e4e4e4;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            text-shadow: none;
+            padding: 6px 14px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+
+            .switch-field label:hover {
+                cursor: pointer;
+            }
+
+        .switch-field input:checked + label {
+            background-color: #A5DC86;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .switch-field label:first-of-type {
+            border-radius: 4px 0 0 4px;
+        }
+
+        .switch-field label:last-of-type {
+            border-radius: 0 4px 4px 0;
+        }
+
+    .form-control {
+        display: block;
+        width: 60%;
+        height: 34px;
+        padding: 6px 32px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    .form-controldisabled {
+        display: block;
+        width: 60%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #ccc;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    .form-controlarea {
+        display: block;
+        width: 60%;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+
+    .form-controlareadisabled {
+        display: block;
+        width: 60%;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #ccc;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+</style>
+
+<body class="w3-light-grey">
+
+
+    <!-- Top container -->
+
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4;">
+
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+
+        <Font>A digital Educational Instructor for Next Generation</Font>
+
+        <span class="w3-bar-item w3-right">Logo</span>
+
+    </div>
+
+
+    <!-- Sidebar/menu -->
+
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+        <br>
+
+        <div class="w3-container w3-row">
+
+            <div class="w3-col s4">
+
+                <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+
+            </div>
+
+            <div class="w3-col s8 w3-bar">
+
+                <span>Welcome, <strong>Mike</strong></span><br>
+
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="w3-container">
+
+            <h5>Dashboard</h5>
+
+        </div>
+
+        <div class="w3-bar-block">
+
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar"></i>  Attendance</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book"></i>  Exams</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users"></i>  Users</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-line-chart"></i>  Reports</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-graduation-cap"></i>  Students</a>   <!-- fa fa-black-tie  -->
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle-o"></i>  Staff</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-refresh"></i>  School Updated</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-camera-retro"></i>  School Gallery</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history"></i>  School History</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-gears"></i>  School SetUp</a><br><br>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+
+        <!-- Header -->
+
+        <header class="w3-container" style="padding-top:22px">
+
+            <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+
+        </header>
+
+
+
+        <div class="w3-row-padding w3-margin-bottom">
+
+            <div class="w3-quarter">
+
+                <div class="w3-container w3-red w3-padding-16">
+
+                    <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+
+                    <div class="w3-right">
+
+                        <h3>52</h3>
+
+                    </div>
+
+                    <div class="w3-clear"></div>
+
+                    <h4>Messages</h4>
+
+                </div>
+
+            </div>
+
+            <div class="w3-quarter">
+
+                <div class="w3-container w3-blue w3-padding-16">
+
+                    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+
+                    <div class="w3-right">
+
+                        <h3>99</h3>
+
+                    </div>
+
+                    <div class="w3-clear"></div>
+
+                    <h4>Views</h4>
+
+                </div>
+
+            </div>
+
+            <div class="w3-quarter">
+
+                <div class="w3-container w3-teal w3-padding-16">
+
+                    <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+
+                    <div class="w3-right">
+
+                        <h3>23</h3>
+
+                    </div>
+
+                    <div class="w3-clear"></div>
+
+                    <h4>Shares</h4>
+
+                </div>
+
+            </div>
+
+            <div class="w3-quarter">
+
+                <div class="w3-container w3-orange w3-text-white w3-padding-16">
+
+                    <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+
+                    <div class="w3-right">
+
+                        <h3>50</h3>
+
+                    </div>
+
+                    <div class="w3-clear"></div>
+
+                    <h4>Users</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="w3-panel">
+
+            <div class="w3-row-padding" style="margin:0 -16px">
+
+
+
+
+                <h5><b>Staff Registration</b></h5>
+                <fieldset>
+                    <table class="w3-table w3-striped">
+
+                        <legend>Staff Details:</legend>
+                        <tr>
+                            <td><label>First Name</label></td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="First Name" />
+                            </td>
+                            <td><label>Previous Experience</label></td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Previous Experience" />
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label>Last Name</label></td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="First Name" />
+                            </td>
+                            <td><label>Designation</label></td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Designation" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>DOB</label></td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Date Of Birth" />
+                            </td>
+
+                            <td><label>Monthly Salary</label></td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Monthly Salary" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>DOJ</label></td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Date Of Joining" />
+                            </td>
+                            <td><label>Heigher Qualification</label></td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Heigher Qualification" />
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+
+                            <td><label>Gender</label></td>
+                            <td>
+                                <div class="switch-field">
+
+                                    <input type="radio" id="switch_left3" name="switch_23" value="yes" />
+                                    <label for="switch_left3">Male</label>
+                                    <input type="radio" id="switch_right3" name="switch_23" value="no" />
+                                    <label for="switch_right3">Female</label>
+                                </div>
+                            </td>
+
+                            <td><label>Specialization</label></td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Specialization" />
+                            </td>
+
+                        </tr>
+                        
+                        <tr>
+                            <td><label>Phone Number</label></td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Phone Number" />
+                            </td>
+                            <td><label>Certificates Submited</label></td>
+                            <td>
+                                <input type="text" class="form-control" placeholder="Certificates Submited" />
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Email Id</label></td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Email Id" />
+                            </td>
+
+                            <td><label>Select Role</label></td>
+                            <td>
+                                <input type="radio" name="role"/>HOD<br />
+                                <input type="radio" name="role"/>Principal<br />
+                                <input type="radio" name="role"/>Admin<br />
+                                <input type="radio" name="role" />Coordinator<br />
+                                <input type="radio" name="role" />Staff
+                            </td>
+                        </tr>
+
+
+                    
+
+
+                        <tr>
+                            <td><label>Present Address</label></td>
+                            <td>
+                                <textarea rows="4" class="form-controlarea"></textarea>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label>Permanent Address</label></td>
+                            <td>
+                                <textarea rows="4" class="form-controlarea"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Blood Group</label></td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Institute Code" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Upload Photo</label></td>
+                            <td>
+                                <input class="form-control" type="text" placeholder="Upload Photo" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Known Language</label></td>
+                            <td>
+                                <input type="checkbox" />Telugu
+                                <input type="checkbox" />Hindi
+                                <input type="checkbox" />English
+                            </td>
+                        </tr>
+
+                        
+
+                        <tr>
+                            <td></td>
+                            <td><button class="w3-button w3-dark-grey">Submit</button></td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+              
+
+
+                
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <footer class="w3-container w3-padding-16 w3-light-grey">
+
+            <h4>FOOTER</h4>
+
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+        </footer>
+
+
+    </div>
+
+
+    <script>
+
+        var mySidebar = document.getElementById("mySidebar");
+        var overlayBg = document.getElementById("myOverlay");
+        function w3_open() {
+
+            if (mySidebar.style.display === 'block') {
+
+                mySidebar.style.display = 'none';
+
+                overlayBg.style.display = "none";
+
+            } else {
+
+                mySidebar.style.display = 'block';
+
+                overlayBg.style.display = "block";
+
+            }
+
+        }
+
+        function w3_close() {
+
+            mySidebar.style.display = "none";
+
+            overlayBg.style.display = "none";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

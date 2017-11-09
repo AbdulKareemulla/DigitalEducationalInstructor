@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<title>W3.CSS Template</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+
+
+
+
+
+
+
+
+<style>
+    html, body, h1, h2, h3, h4, h5 {
+        font-family: "Raleway", sans-serif
+    }
+
+
+    .switch-field {
+        font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+        overflow: hidden;
+    }
+
+        .switch-field input {
+            position: absolute !important;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            width: 1px;
+            border: 0;
+            overflow: hidden;
+        }
+
+        .switch-field label {
+            float: left;
+        }
+
+        .switch-field label {
+            display: inline-block;
+            width: 100px;
+            background-color: #e4e4e4;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            text-shadow: none;
+            padding: 6px 14px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+
+            .switch-field label:hover {
+                cursor: pointer;
+            }
+
+        .switch-field input:checked + label {
+            background-color: #A5DC86;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .switch-field label:first-of-type {
+            border-radius: 4px 0 0 4px;
+        }
+
+        .switch-field label:last-of-type {
+            border-radius: 0 4px 4px 0;
+        }
+
+    .form-control {
+        display: block;
+        width: 60%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .form-controldisabled {
+        display: block;
+        width: 60%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #ccc;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+
+    .form-controlareadisabled {
+        display: block;
+        width: 60%;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #ccc;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+</style>
+
+<body class="w3-light-grey">
+
+
+    <!-- Top container -->
+
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4;" >
+
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+
+        <Font>A digital Educational Instructor for Next Generation</Font>
+
+        <span class="w3-bar-item w3-right">Logo</span>
+
+    </div>
+
+
+    <!-- Sidebar/menu -->
+
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+        <br>
+
+        <div class="w3-container w3-row">
+
+            <div class="w3-col s4">
+
+                <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+
+            </div>
+
+            <div class="w3-col s8 w3-bar">
+
+                <span>Welcome, <strong>Mike</strong></span><br>
+
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="w3-container">
+
+            <h5>Dashboard</h5>
+
+        </div>
+
+        <div class="w3-bar-block">
+
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar"></i>  Attendance</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book"></i>  Exams</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users"></i>  Users</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-line-chart"></i>  Reports</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-graduation-cap"></i>  Students</a>   <!-- fa fa-black-tie  -->
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle-o"></i>  Staff</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-refresh"></i>  School Updated</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-camera-retro"></i>  School Gallery</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history"></i>  School History</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-gears"></i>  School SetUp</a><br><br>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+
+        <!-- Header -->
+
+        <header class="w3-container" style="padding-top:22px">
+
+            <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+
+        </header>
+
+
+
+        <div class="w3-row-padding w3-margin-bottom">
+
+            <div class="w3-quarter">
+
+                <div class="w3-container w3-red w3-padding-16">
+
+                    <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+
+                    <div class="w3-right">
+
+                        <h3>52</h3>
+
+                    </div>
+
+                    <div class="w3-clear"></div>
+
+                    <h4>Messages</h4>
+
+                </div>
+
+            </div>
+
+            <div class="w3-quarter">
+
+                <div class="w3-container w3-blue w3-padding-16">
+
+                    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+
+                    <div class="w3-right">
+
+                        <h3>99</h3>
+
+                    </div>
+
+                    <div class="w3-clear"></div>
+
+                    <h4>Views</h4>
+
+                </div>
+
+            </div>
+
+            <div class="w3-quarter">
+
+                <div class="w3-container w3-teal w3-padding-16">
+
+                    <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+
+                    <div class="w3-right">
+
+                        <h3>23</h3>
+
+                    </div>
+
+                    <div class="w3-clear"></div>
+
+                    <h4>Shares</h4>
+
+                </div>
+
+            </div>
+
+            <div class="w3-quarter">
+
+                <div class="w3-container w3-orange w3-text-white w3-padding-16">
+
+                    <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+
+                    <div class="w3-right">
+
+                        <h3>50</h3>
+
+                    </div>
+
+                    <div class="w3-clear"></div>
+
+                    <h4>Users</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="w3-panel">
+
+            <div class="w3-row-padding" style="margin:0 -16px">
+
+                <div class="w3-third">
+                </div>
+
+                <div class="w3-twothird">
+
+
+                    <h5><b>School Registration Confirmation</b></h5>
+                    <table class="w3-table w3-striped">
+
+                        <tr>
+                            <td><label>School Name</label></td>
+                            <td>
+                                <input type="text" class="form-controldisabled" placeholder="Enter School Name" disabled="disabled"/>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><label>Institute Name</label></td>
+                            <td>
+                                <input type="text" class="form-controldisabled" placeholder="Enter Institute Name" />
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>Type Of Institute</label></td>
+                            <td>
+                                <select class="form-controldisabled">
+                                    <option>School</option>
+                                    <option>Junior College</option>
+                                    <option>General Degree</option>
+                                    <option>Engineering</option>
+                                    <option>Medical</option>
+                                </select>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><label>Institute Code</label></td>
+                            <td>
+                                <input class="form-controldisabled" type="text" placeholder="Institute Code"/>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>Country</label></td>
+                            <td>
+                                <select class="form-controldisabled">
+                                    <option>India</option>
+                                    <option>America</option>
+                                    <option>Australia</option>
+                                    <option>England</option>
+                                    <option>South Africa</option>
+                                </select>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><label>State</label></td>
+                            <td>
+                                <select class="form-controldisabled">
+                                    <option> Andhra Pradesh </option>
+                                    <option> Telangana </option>
+                                    <option> Madhya Pradesh </option>
+                                    <option> Tamil Nadu </option>
+                                    <option>  </option>
+                                </select>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>District</label></td>
+                            <td>
+                                <select class="form-controldisabled">
+                                    <option> Krishna </option>
+                                    <option> Vizag </option>
+                                    <option> West Godavari </option>
+                                    <option> Nalagonda </option>
+                                    <option> Nellore </option>
+                                </select>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><label>City</label></td>
+                            <td>
+                                <select class="form-controldisabled">
+                                    <option> Vijayawada </option>
+                                    <option> Ganavaram </option>
+                                    <option> Kondapalli </option>
+                                    <option> Machilipatnam </option>
+                                    <option> Nandigama </option>
+                                </select>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>Address1</label></td>
+                            <td>
+                                <textarea class="form-controlareadisabled" rows="4"></textarea>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>Address2</label></td>
+                            <td>
+                                <textarea class="form-controlareadisabled" rows="4"></textarea>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>Pin Code</label></td>
+                            <td>
+                                <input class="form-controldisabled" type="text" placeholder="Pin Code"/>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><label>Sector</label></td>
+                            <td>
+                                <div class="switch-field">
+
+                                    <input type="radio" id="switch_left3" name="switch_23" value="yes" checked disabled="disabled"/>
+                                    <label for="switch_left3">Govt</label>
+                                    <input type="radio" id="switch_right3" name="switch_23" value="no" disabled="disabled"/>
+                                    <label for="switch_right3">Privt</label>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>Institute Phone</label></td>
+                            <td>
+                                <input class="form-controldisabled" type="text"  placeholder="Institute Phone"/>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><label>Alternative Phone</label></td>
+                            <td>
+                                <input class="form-controldisabled" type="text" placeholder="Alternative Phone"/>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label>Email Id</label></td>
+                            <td>
+                                <input class="form-controldisabled" type="text" placeholder="Email Id"/>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><label>OTP</label></td>
+                            <td>
+                                <input class="form-controldisabled" type="text" placeholder="OTP"/>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="w3-button w3-dark-grey">Submit</button></td>
+                        </tr>
+
+                    </table>
+                    <table class="w3-table w3-striped ">
+                        
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <footer class="w3-container w3-padding-16 w3-light-grey">
+
+            <h4>FOOTER</h4>
+
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+        </footer>
+
+
+    </div>
+
+
+    <script>
+
+        var mySidebar = document.getElementById("mySidebar");
+        var overlayBg = document.getElementById("myOverlay");
+        function w3_open() {
+
+            if (mySidebar.style.display === 'block') {
+
+                mySidebar.style.display = 'none';
+
+                overlayBg.style.display = "none";
+
+            } else {
+
+                mySidebar.style.display = 'block';
+
+                overlayBg.style.display = "block";
+
+            }
+
+        }
+
+        function w3_close() {
+
+            mySidebar.style.display = "none";
+
+            overlayBg.style.display = "none";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
