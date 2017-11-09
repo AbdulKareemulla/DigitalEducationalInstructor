@@ -110,6 +110,7 @@
     <Content Include="HTML\Gallery\img\demo\slide_31.jpg" />
     <Content Include="HTML\Gallery\img\grad-black-hover.svg" />
     <Content Include="HTML\Gallery\img\grad-black.svg" />
+    <Content Include="MasterPages\AdmimMaster.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -303,10 +304,24 @@
     <Content Include="HTML\View Attendance  Attendance.html" />
     <Content Include="HTML\ViewExamTimeTable.html" />
     <Content Include="HTML\ViewMeetingSchedule.html" />
+    <Content Include="Pages\Entering_Attendance.aspx" />
     <Content Include="test.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MasterPages\AdmimMaster.Master.cs">
+      <DependentUpon>AdmimMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\AdmimMaster.Master.designer.cs">
+      <DependentUpon>AdmimMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Entering_Attendance.aspx.cs">
+      <DependentUpon>Entering_Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Entering_Attendance.aspx.designer.cs">
+      <DependentUpon>Entering_Attendance.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>
