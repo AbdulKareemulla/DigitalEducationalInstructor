@@ -113,6 +113,7 @@
     <Content Include="MasterPages\AdmimMaster.Master" />
     <Content Include="Latest DatabaseBackup\SMSAppDB.bak" />
     <None Include="packages.config" />
+    <Content Include="TeamImpNotes\Ideas_PendingItems.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

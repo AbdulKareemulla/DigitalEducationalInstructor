@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="99e22c819d294838936274949433cc2b" Name="Diagram1">
+      <Diagram DiagramId="99e22c819d294838936274949433cc2b" Name="Diagram1" ZoomLevel="63">
         <EntityTypeShape EntityType="SMSAppDBModel.tblBaseAssessmentYear" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SMSAppDBModel.tblBaseAttendanceType" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SMSAppDBModel.tblBaseBloodGroup" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
@@ -81,6 +81,8 @@
         <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__634EBE90" ManuallyRouted="false" />
         <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__719CDDE7" ManuallyRouted="false" />
         <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Schoo__336AA144" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseSchoolStudentRange" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseUniversity" Width="1.5" PointX="5.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

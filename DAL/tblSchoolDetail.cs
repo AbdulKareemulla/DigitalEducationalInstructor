@@ -58,6 +58,11 @@ namespace DAL
         public Nullable<short> Sch_Subscription_Amount_per_Student { get; set; }
         public string Sch_Logo { get; set; }
         public string Sch_University { get; set; }
+        public string Univ_Code { get; set; }
+        public Nullable<int> Sch_Std_Range_Code { get; set; }
+        public Nullable<bool> Demo { get; set; }
+        public string HowDemo { get; set; }
+        public string ContactPreference { get; set; }
     
         public virtual tblBaseCountry tblBaseCountry { get; set; }
         public virtual tblBaseSchoolCollegeType tblBaseSchoolCollegeType { get; set; }

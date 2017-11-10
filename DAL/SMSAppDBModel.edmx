@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SMSAppDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SMSAppDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tblBaseAssessmentYears">
           <Key>
             <PropertyRef Name="RecordId" />
@@ -290,6 +290,20 @@
           <Property Name="SchoolTypeDescription" Type="varchar" MaxLength="30" />
           <Property Name="Record_Status" Type="bit" Nullable="false" />
         </EntityType>
+        <EntityType Name="tblBaseSchoolStudentRange">
+          <Key>
+            <PropertyRef Name="RecordId" />
+          </Key>
+          <Property Name="RecordId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AddedBy" Type="nvarchar" MaxLength="10" />
+          <Property Name="CreatedDate_utc" Type="datetime" />
+          <Property Name="UpdatedDate" Type="datetimeoffset" Precision="7" />
+          <Property Name="Range_Code" Type="int" />
+          <Property Name="Range" Type="varchar" MaxLength="100" />
+          <Property Name="from_qty" Type="int" />
+          <Property Name="to_qty" Type="int" />
+          <Property Name="Record_Status" Type="bit" Nullable="false" />
+        </EntityType>
         <EntityType Name="tblBaseSections">
           <Key>
             <PropertyRef Name="RecordId" />
@@ -337,6 +351,18 @@
           <Property Name="UpdatedDate" Type="datetimeoffset" Precision="7" />
           <Property Name="MessageCode" Type="varchar" MaxLength="10" />
           <Property Name="MessageDesc" Type="varchar" MaxLength="100" />
+          <Property Name="Record_Status" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblBaseUniversities">
+          <Key>
+            <PropertyRef Name="RecordId" />
+          </Key>
+          <Property Name="RecordId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AddedBy" Type="nvarchar" MaxLength="10" />
+          <Property Name="CreatedDate_utc" Type="datetime" />
+          <Property Name="UpdatedDate" Type="datetimeoffset" Precision="7" />
+          <Property Name="University_Code" Type="varchar" MaxLength="100" />
+          <Property Name="University_Name" Type="varchar" MaxLength="100" />
           <Property Name="Record_Status" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="tblBaseWeekDays">
@@ -562,6 +588,11 @@
           <Property Name="Sch_Subscription_Amount_per_Student" Type="smallint" />
           <Property Name="Sch_Logo" Type="varchar" MaxLength="200" />
           <Property Name="Sch_University" Type="varchar" MaxLength="100" />
+          <Property Name="Univ_Code" Type="varchar" MaxLength="100" />
+          <Property Name="Sch_Std_Range_Code" Type="int" />
+          <Property Name="Demo" Type="bit" />
+          <Property Name="HowDemo" Type="varchar" MaxLength="100" />
+          <Property Name="ContactPreference" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="tblSchoolGradeDefinition">
           <Key>
@@ -1113,10 +1144,12 @@
           <EntitySet Name="tblBasePhoneCountryCodes" EntityType="Self.tblBasePhoneCountryCodes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseRoles" EntityType="Self.tblBaseRoles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseSchoolCollegeTypes" EntityType="Self.tblBaseSchoolCollegeTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblBaseSchoolStudentRange" EntityType="Self.tblBaseSchoolStudentRange" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseSections" EntityType="Self.tblBaseSections" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseStates" EntityType="Self.tblBaseStates" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseStudentDeptsInSchool" EntityType="Self.tblBaseStudentDeptsInSchool" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseUndeclaredHolidayMessages" EntityType="Self.tblBaseUndeclaredHolidayMessages" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblBaseUniversities" EntityType="Self.tblBaseUniversities" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseWeekDays" EntityType="Self.tblBaseWeekDays" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseWishingMesgs" EntityType="Self.tblBaseWishingMesgs" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblBaseYears" EntityType="Self.tblBaseYears" Schema="dbo" store:Type="Tables" />
@@ -1233,8 +1266,7 @@
             <End Role="tblSchoolInandOutTime" EntitySet="tblSchoolInandOutTime" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SMSAppDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1828,6 +1860,11 @@
           <NavigationProperty Name="tblSchoolWiseClasses_History" Relationship="Self.FK__tblSchool__Sch_I__634EBE90" FromRole="tblSchoolDetails" ToRole="tblSchoolWiseClasses_History" />
           <NavigationProperty Name="tblSchoolWiseSections" Relationship="Self.FK__tblSchool__Sch_I__719CDDE7" FromRole="tblSchoolDetails" ToRole="tblSchoolWiseSections" />
           <NavigationProperty Name="tblSchoolInandOutTimes" Relationship="Self.FK__tblSchool__Schoo__336AA144" FromRole="tblSchoolDetails" ToRole="tblSchoolInandOutTime" />
+          <Property Name="Univ_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Sch_Std_Range_Code" Type="Int32" />
+          <Property Name="Demo" Type="Boolean" />
+          <Property Name="HowDemo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ContactPreference" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tblSchoolGradeDefinition">
           <Key>
@@ -2509,7 +2546,35 @@
             <End Role="tblSchoolDetails" EntitySet="tblSchoolDetails" />
             <End Role="tblSchoolInandOutTime" EntitySet="tblSchoolInandOutTimes" />
           </AssociationSet>
+          <EntitySet Name="tblBaseSchoolStudentRanges" EntityType="SMSAppDBModel.tblBaseSchoolStudentRange" />
+          <EntitySet Name="tblBaseUniversities" EntityType="SMSAppDBModel.tblBaseUniversity" />
         </EntityContainer>
+        <EntityType Name="tblBaseSchoolStudentRange">
+          <Key>
+            <PropertyRef Name="RecordId" />
+          </Key>
+          <Property Name="RecordId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate_utc" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedDate" Type="DateTimeOffset" Precision="7" />
+          <Property Name="Range_Code" Type="Int32" />
+          <Property Name="Range" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="from_qty" Type="Int32" />
+          <Property Name="to_qty" Type="Int32" />
+          <Property Name="Record_Status" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblBaseUniversity">
+          <Key>
+            <PropertyRef Name="RecordId" />
+          </Key>
+          <Property Name="RecordId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddedBy" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate_utc" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedDate" Type="DateTimeOffset" Precision="7" />
+          <Property Name="University_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="University_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Record_Status" Type="Boolean" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -3084,6 +3149,11 @@
           <EntitySetMapping Name="tblSchoolDetails">
             <EntityTypeMapping TypeName="SMSAppDBModel.tblSchoolDetail">
               <MappingFragment StoreEntitySet="tblSchoolDetails">
+                <ScalarProperty Name="ContactPreference" ColumnName="ContactPreference" />
+                <ScalarProperty Name="HowDemo" ColumnName="HowDemo" />
+                <ScalarProperty Name="Demo" ColumnName="Demo" />
+                <ScalarProperty Name="Sch_Std_Range_Code" ColumnName="Sch_Std_Range_Code" />
+                <ScalarProperty Name="Univ_Code" ColumnName="Univ_Code" />
                 <ScalarProperty Name="RecordId" ColumnName="RecordId" />
                 <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
                 <ScalarProperty Name="CreatedDate_utc" ColumnName="CreatedDate_utc" />
@@ -3387,6 +3457,34 @@
                 <ScalarProperty Name="Lecturer_Id" ColumnName="Lecturer_Id" />
                 <ScalarProperty Name="Assigned_Coordinator" ColumnName="Assigned_Coordinator" />
                 <ScalarProperty Name="Assigned_Coordinator_Id" ColumnName="Assigned_Coordinator_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBaseSchoolStudentRanges">
+            <EntityTypeMapping TypeName="SMSAppDBModel.tblBaseSchoolStudentRange">
+              <MappingFragment StoreEntitySet="tblBaseSchoolStudentRange">
+                <ScalarProperty Name="Record_Status" ColumnName="Record_Status" />
+                <ScalarProperty Name="to_qty" ColumnName="to_qty" />
+                <ScalarProperty Name="from_qty" ColumnName="from_qty" />
+                <ScalarProperty Name="Range" ColumnName="Range" />
+                <ScalarProperty Name="Range_Code" ColumnName="Range_Code" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="CreatedDate_utc" ColumnName="CreatedDate_utc" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="RecordId" ColumnName="RecordId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBaseUniversities">
+            <EntityTypeMapping TypeName="SMSAppDBModel.tblBaseUniversity">
+              <MappingFragment StoreEntitySet="tblBaseUniversities">
+                <ScalarProperty Name="Record_Status" ColumnName="Record_Status" />
+                <ScalarProperty Name="University_Name" ColumnName="University_Name" />
+                <ScalarProperty Name="University_Code" ColumnName="University_Code" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="CreatedDate_utc" ColumnName="CreatedDate_utc" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="RecordId" ColumnName="RecordId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

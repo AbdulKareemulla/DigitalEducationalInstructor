@@ -79,5 +79,7 @@ namespace DAL
         public DbSet<tblSchoolwiseSubject> tblSchoolwiseSubjects { get; set; }
         public DbSet<tblStaffDetail> tblStaffDetails { get; set; }
         public DbSet<tblStudentDetail> tblStudentDetails { get; set; }
+        public DbSet<tblBaseSchoolStudentRange> tblBaseSchoolStudentRanges { get; set; }
+        public DbSet<tblBaseUniversity> tblBaseUniversities { get; set; }
     }
 }

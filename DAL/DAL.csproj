@@ -133,6 +133,9 @@
     <Compile Include="tblBaseSchoolCollegeType.cs">
       <DependentUpon>SMSAppDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="tblBaseSchoolStudentRange.cs">
+      <DependentUpon>SMSAppDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="tblBaseSection.cs">
       <DependentUpon>SMSAppDBModel.tt</DependentUpon>
     </Compile>
@@ -143,6 +146,9 @@
       <DependentUpon>SMSAppDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="tblBaseUndeclaredHolidayMessage.cs">
+      <DependentUpon>SMSAppDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBaseUniversity.cs">
       <DependentUpon>SMSAppDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="tblBaseWeekDay.cs">
