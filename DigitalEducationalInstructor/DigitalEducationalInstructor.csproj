@@ -111,6 +111,7 @@
     <Content Include="HTML\Gallery\img\grad-black-hover.svg" />
     <Content Include="HTML\Gallery\img\grad-black.svg" />
     <Content Include="MasterPages\AdmimMaster.Master" />
+    <Content Include="Latest DatabaseBackup\SMSAppDB.bak" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -309,8 +310,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonClassFiles\CommonFunctions.cs" />
+    <Compile Include="CommonClassFiles\Constants.cs" />
+    <Compile Include="CommonClassFiles\ExceptionClass.cs" />
     <Compile Include="MasterPages\AdmimMaster.Master.cs">
       <DependentUpon>AdmimMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPages\AdmimMaster.Master.designer.cs">
       <DependentUpon>AdmimMaster.Master</DependentUpon>
@@ -332,9 +337,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="1CommonPages\" />
+    <Folder Include="2SchoolSetupPages\" />
+    <Folder Include="3SchoolAdminPages\" />
+    <Folder Include="4PrincipalPages\" />
+    <Folder Include="5HODPages\" />
+    <Folder Include="6StaffPages\" />
+    <Folder Include="7ParentPages\" />
+    <Folder Include="8StudentPages\" />
+    <Folder Include="9SiteAdminPages\" />
     <Folder Include="HTML\Gallery\js\" />
     <Folder Include="HTML\Gallery\menu\" />
     <Folder Include="HTML\Gallery\theme\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{40a0c682-03bc-4b05-8b01-1376df900edb}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="99e22c819d294838936274949433cc2b" Name="Diagram1">
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseAssessmentYear" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseAttendanceType" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseBloodGroup" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseCalenderYear_HolidayList" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseCity" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseClassesBasedonSchoolType" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseComplaintMesg" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseConstant" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseCountry" Width="1.5" PointX="0.75" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseDeptsInSchool" Width="1.5" PointX="2.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseDistrict" Width="1.5" PointX="14.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseErrorMessage" Width="1.5" PointX="4.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseExamType" Width="1.5" PointX="14.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseFeedbackMesg" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseGrade" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseKnownLanguage" Width="1.5" PointX="16.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseMedium" Width="1.5" PointX="9" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseMeetingType" Width="1.5" PointX="16.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseMonth" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseNotificationType" Width="1.5" PointX="16.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBasePhoneCountryCode" Width="1.5" PointX="3" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseRole" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseSchoolCollegeType" Width="1.5" PointX="3.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseSection" Width="1.5" PointX="14.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseState" Width="1.5" PointX="3.75" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseStudentDeptsInSchool" Width="1.5" PointX="16.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseUndeclaredHolidayMessage" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseWeekDay" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseWishingMesg" Width="1.5" PointX="0.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblBaseYear" Width="1.5" PointX="2.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblClassSectionTimeTable" Width="1.5" PointX="8.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblClassSectionTimeTable_Records" Width="1.5" PointX="10.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblClassWiseSection" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblClassWiseSections_History" Width="1.5" PointX="8.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblClasswiseSubjects_History" Width="1.5" PointX="8.25" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblClasswiseSyllabu" Width="1.5" PointX="2.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblClasswiseSyllabus_Records" Width="1.5" PointX="5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblParentDetail" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchool_Regist_OTPs" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolDetail" Width="1.5" PointX="6" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolGradeDefinition" Width="1.5" PointX="4.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolHolidayList" Width="1.5" PointX="8.25" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolHolidayList_History" Width="1.5" PointX="8.25" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolInandOutTime" Width="1.5" PointX="8.25" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolStaffDept" Width="1.5" PointX="18.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolStudentDept" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolWeekOff" Width="1.5" PointX="8.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolWiseClass" Width="1.5" PointX="8.25" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolWiseClasses_History" Width="1.5" PointX="8.25" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolWiseMedium" Width="1.5" PointX="11.25" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolWiseSection" Width="1.5" PointX="8.25" PointY="52.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblSchoolwiseSubject" Width="1.5" PointX="8.25" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblStaffDetail" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSAppDBModel.tblStudentDetail" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblBasePh__Count__2FCF1A8A" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_C__395884C4" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Mediu__47A6A41B" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_T__3864608B" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_S__3A4CA8FD" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblClassS__Perio__41B8C09B" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblClassS__Schoo__3A179ED3" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblClassS__TimeT__40C49C62" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblClassW__Sch_I__7849DB76" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblClassW__Sch_I__00DF2177" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblClassw__Sch_I__10216507" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblClassw__Sylla__5A846E65" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblParent__Std_R__7908F585" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__078C1F06" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__16CE6296" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__1E6F845E" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__2704CA5F" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__46B27FE2" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__540C7B00" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__634EBE90" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Sch_I__719CDDE7" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSAppDBModel.FK__tblSchool__Schoo__336AA144" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
