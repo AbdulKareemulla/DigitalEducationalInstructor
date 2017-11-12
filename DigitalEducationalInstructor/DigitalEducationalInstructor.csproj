@@ -66,6 +66,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="CSS\DigitalEductaionalInstructor.css" />
+    <Content Include="CSS\font-awesome.css" />
+    <Content Include="CSS\Raleway.css" />
+    <Content Include="CSS\w3School.css" />
     <Content Include="HTML\Gallery\css\boxes\css\style5.css" />
     <Content Include="HTML\Gallery\css\boxes\css\style6.css" />
     <Content Include="HTML\Gallery\css\boxes\css\websymbols\websymbols-regular-webfont.eot" />
@@ -112,6 +118,12 @@
     <Content Include="HTML\Gallery\img\grad-black.svg" />
     <Content Include="MasterPages\AdmimMaster.Master" />
     <Content Include="Latest DatabaseBackup\SMSAppDB.bak" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="packages.config" />
     <Content Include="TeamImpNotes\Ideas_PendingItems.xlsx" />
     <None Include="Web.Debug.config">
@@ -350,6 +362,7 @@
     <Folder Include="HTML\Gallery\js\" />
     <Folder Include="HTML\Gallery\menu\" />
     <Folder Include="HTML\Gallery\theme\" />
+    <Folder Include="js\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BAL\BAL.csproj">
