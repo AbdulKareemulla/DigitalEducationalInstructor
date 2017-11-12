@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="2SchoolSetupPages\SchoolRegistration.aspx" />
     <Content Include="HTML\Gallery\css\boxes\css\style5.css" />
     <Content Include="HTML\Gallery\css\boxes\css\style6.css" />
     <Content Include="HTML\Gallery\css\boxes\css\websymbols\websymbols-regular-webfont.eot" />
@@ -311,6 +312,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2SchoolSetupPages\SchoolRegistration.aspx.cs">
+      <DependentUpon>SchoolRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\SchoolRegistration.aspx.designer.cs">
+      <DependentUpon>SchoolRegistration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CommonClassFiles\CommonFunctions.cs" />
     <Compile Include="CommonClassFiles\Constants.cs" />
     <Compile Include="CommonClassFiles\ExceptionClass.cs" />
@@ -339,7 +347,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="1CommonPages\" />
-    <Folder Include="2SchoolSetupPages\" />
     <Folder Include="3SchoolAdminPages\" />
     <Folder Include="4PrincipalPages\" />
     <Folder Include="5HODPages\" />
