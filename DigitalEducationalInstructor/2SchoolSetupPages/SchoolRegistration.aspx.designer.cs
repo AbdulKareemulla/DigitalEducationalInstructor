@@ -211,13 +211,13 @@ namespace DigitalEducationalInstructor._2SchoolSetupPages {
         protected global::System.Web.UI.WebControls.Label lblCity;
         
         /// <summary>
-        /// ddlCity control.
+        /// txtCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCity;
+        protected global::System.Web.UI.WebControls.TextBox txtCity;
         
         /// <summary>
         /// lblPinCode control.
@@ -229,13 +229,13 @@ namespace DigitalEducationalInstructor._2SchoolSetupPages {
         protected global::System.Web.UI.WebControls.Label lblPinCode;
         
         /// <summary>
-        /// ddlPincode control.
+        /// txtPincode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPincode;
+        protected global::System.Web.UI.WebControls.TextBox txtPincode;
         
         /// <summary>
         /// lblAddress1 control.
@@ -247,13 +247,13 @@ namespace DigitalEducationalInstructor._2SchoolSetupPages {
         protected global::System.Web.UI.WebControls.Label lblAddress1;
         
         /// <summary>
-        /// ddlAddress1 control.
+        /// txtAddress1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAddress1;
+        protected global::System.Web.UI.WebControls.TextBox txtAddress1;
         
         /// <summary>
         /// lblAddress2 control.
@@ -265,13 +265,13 @@ namespace DigitalEducationalInstructor._2SchoolSetupPages {
         protected global::System.Web.UI.WebControls.Label lblAddress2;
         
         /// <summary>
-        /// ddlAddress2 control.
+        /// txtAddress2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAddress2;
+        protected global::System.Web.UI.WebControls.TextBox txtAddress2;
         
         /// <summary>
         /// lblLandMark control.
@@ -283,13 +283,13 @@ namespace DigitalEducationalInstructor._2SchoolSetupPages {
         protected global::System.Web.UI.WebControls.Label lblLandMark;
         
         /// <summary>
-        /// ddlLandmark control.
+        /// txtLandMark control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLandmark;
+        protected global::System.Web.UI.WebControls.TextBox txtLandMark;
         
         /// <summary>
         /// panelContactDetails control.

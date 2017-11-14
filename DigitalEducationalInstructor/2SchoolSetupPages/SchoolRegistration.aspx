@@ -88,12 +88,12 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblSector" runat="server" Text="Institute Sector"></asp:Label>
+                                            <asp:Label ID="lblSector" runat="server" Text="Institute Sector Type"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:RadioButtonList ID="radioSector" runat="server">
                                                 <asp:ListItem Text="Private" Value="pvt" Selected="True"></asp:ListItem>
-                                                <asp:ListItem Text="Private" Value="govt"></asp:ListItem>
+                                                <asp:ListItem Text="Government" Value="govt"></asp:ListItem>
                                             </asp:RadioButtonList>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@
                                             <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:DropDownList ID="ddlCity" runat="server"></asp:DropDownList>
+                                            <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="divTableRow">
@@ -151,7 +151,8 @@
                                             <asp:Label ID="lblPinCode" runat="server" Text="PinCode"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:DropDownList ID="ddlPincode" runat="server"></asp:DropDownList>
+                                            <asp:TextBox ID="txtPincode" runat="server"></asp:TextBox>
+
                                         </div>
                                     </div>
                                     <div class="divTableRow">
@@ -159,7 +160,7 @@
                                             <asp:Label ID="lblAddress1" runat="server" Text="Address1"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:DropDownList ID="ddlAddress1" runat="server"></asp:DropDownList>
+                                            <asp:TextBox ID="txtAddress1" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="divTableRow">
@@ -167,7 +168,7 @@
                                             <asp:Label ID="lblAddress2" runat="server" Text="Address2"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:DropDownList ID="ddlAddress2" runat="server"></asp:DropDownList>
+                                            <asp:TextBox ID="txtAddress2" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="divTableRow">
@@ -175,7 +176,7 @@
                                             <asp:Label ID="lblLandMark" runat="server" Text="LandMark"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:DropDownList ID="ddlLandmark" runat="server"></asp:DropDownList>
+                                            <asp:TextBox ID="txtLandMark" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +259,11 @@
                                                             <asp:Label ID="lblHowToReach" runat="server" Text="How can we reach you?"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:DropDownList ID="ddlHowToReach" runat="server"></asp:DropDownList>
+                                                            <asp:DropDownList ID="ddlHowToReach" runat="server">
+                                                                <asp:ListItem Text="Meet Directly" Value="Direct"></asp:ListItem>
+                                                                <asp:ListItem Text="Through PhoneCall" Value="Phone"></asp:ListItem>
+                                                                <asp:ListItem Text="Through Email" Value="Email"></asp:ListItem>
+                                                            </asp:DropDownList>
                                                         </div>
                                                     </div>
                                                     <div class="divTableRow">
@@ -290,10 +295,10 @@
         <div class="divTable">
             <div class="divTableBody">
                 <div class="divTableRow" style="width: 100%">
-                    <div class="divTableCell" style="text-align:end">
+                    <div class="divTableCell" style="text-align: end">
                         <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
                     </div>
-                    <div class="divTableCell" style="text-align:start">
+                    <div class="divTableCell" style="text-align: start">
                         <asp:Button ID="btnClear" runat="server" Text="Clear" />
                     </div>
                 </div>
