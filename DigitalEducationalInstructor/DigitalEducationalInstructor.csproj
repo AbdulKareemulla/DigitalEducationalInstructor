@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="8StudentPages\StudentRegistration.aspx" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="CSS\DigitalEductaionalInstructor.css" />
@@ -331,6 +332,13 @@
     <Compile Include="2SchoolSetupPages\SchoolRegistration.aspx.designer.cs">
       <DependentUpon>SchoolRegistration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="8StudentPages\StudentRegistration.aspx.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="8StudentPages\StudentRegistration.aspx.designer.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CommonClassFiles\CommonFunctions.cs" />
     <Compile Include="CommonClassFiles\Constants.cs" />
     <Compile Include="CommonClassFiles\ExceptionClass.cs" />
@@ -364,7 +372,6 @@
     <Folder Include="5HODPages\" />
     <Folder Include="6StaffPages\" />
     <Folder Include="7ParentPages\" />
-    <Folder Include="8StudentPages\" />
     <Folder Include="9SiteAdminPages\" />
     <Folder Include="HTML\Gallery\js\" />
     <Folder Include="HTML\Gallery\menu\" />
