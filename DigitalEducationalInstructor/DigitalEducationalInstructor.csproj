@@ -66,7 +66,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="2SchoolSetupPages\SchoolMediums.aspx" />
+    <Content Include="2SchoolSetupPages\Medium.aspx" />
+    <Content Include="8StudentPages\StudentRegistration.aspx" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="CSS\DigitalEductaionalInstructor.css" />
+    <Content Include="CSS\font-awesome.css" />
+    <Content Include="CSS\Raleway.css" />
+    <Content Include="CSS\w3School.css" />
+    <Content Include="2SchoolSetupPages\SchoolRegistration.aspx" />
     <Content Include="HTML\Gallery\css\boxes\css\style5.css" />
     <Content Include="HTML\Gallery\css\boxes\css\style6.css" />
     <Content Include="HTML\Gallery\css\boxes\css\websymbols\websymbols-regular-webfont.eot" />
@@ -113,6 +121,12 @@
     <Content Include="HTML\Gallery\img\grad-black.svg" />
     <Content Include="MasterPages\AdmimMaster.Master" />
     <Content Include="Latest DatabaseBackup\SMSAppDB.bak" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="packages.config" />
     <Content Include="TeamImpNotes\Ideas_PendingItems.xlsx" />
     <None Include="Web.Debug.config">
@@ -312,12 +326,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2SchoolSetupPages\SchoolMediums.aspx.cs">
-      <DependentUpon>SchoolMediums.aspx</DependentUpon>
+    <Compile Include="2SchoolSetupPages\Medium.aspx.cs">
+      <DependentUpon>Medium.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="2SchoolSetupPages\SchoolMediums.aspx.designer.cs">
-      <DependentUpon>SchoolMediums.aspx</DependentUpon>
+    <Compile Include="2SchoolSetupPages\Medium.aspx.designer.cs">
+      <DependentUpon>Medium.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\SchoolRegistration.aspx.cs">
+      <DependentUpon>SchoolRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\SchoolRegistration.aspx.designer.cs">
+      <DependentUpon>SchoolRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="8StudentPages\StudentRegistration.aspx.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="8StudentPages\StudentRegistration.aspx.designer.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
     </Compile>
     <Compile Include="CommonClassFiles\CommonFunctions.cs" />
     <Compile Include="CommonClassFiles\Constants.cs" />
@@ -352,11 +380,11 @@
     <Folder Include="5HODPages\" />
     <Folder Include="6StaffPages\" />
     <Folder Include="7ParentPages\" />
-    <Folder Include="8StudentPages\" />
     <Folder Include="9SiteAdminPages\" />
     <Folder Include="HTML\Gallery\js\" />
     <Folder Include="HTML\Gallery\menu\" />
     <Folder Include="HTML\Gallery\theme\" />
+    <Folder Include="js\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BAL\BAL.csproj">
