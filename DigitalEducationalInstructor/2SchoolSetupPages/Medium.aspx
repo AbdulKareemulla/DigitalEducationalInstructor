@@ -1,48 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/AdmimMaster.Master" AutoEventWireup="true" CodeBehind="Medium.aspx.cs" Inherits="DigitalEducationalInstructor._2SchoolSetupPages.Medium" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-      $(function () {
-
-          //$('#h_v').val();
-
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
-  </script>
-
-
-
-
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -130,7 +87,59 @@
 
             <h5>Student Details</h5>
 
-            <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+            
+            
+        <asp:GridView ID="grdmedium" runat="server" AutoGenerateColumns="False" 
+            OnRowCancelingEdit="grdmedium_RowCancelingEdit"   
+OnRowEditing="grdmedium_RowEditing" OnRowUpdating="grdmedium_RowUpdating">  
+            <Columns>  
+                <asp:TemplateField>  
+                    <ItemTemplate>  
+                        <asp:Button ID="btn_Edit" runat="server" Text="Edit" CommandName="Edit" />  
+                    </ItemTemplate>  
+                    <EditItemTemplate>  
+                        <asp:Button ID="btn_Update" runat="server" Text="Update" CommandName="Update"/>  
+                        <asp:Button ID="btn_Cancel" runat="server" Text="Cancel" CommandName="Cancel"/>  
+                    </EditItemTemplate>  
+                </asp:TemplateField>  
+                <asp:TemplateField> 
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_ID" runat="server" Text='<%#Eval("RecordId") %>' style="display:none" ></asp:Label>  
+                    </ItemTemplate>  
+                </asp:TemplateField>  
+
+                 <asp:TemplateField HeaderText="Serial No"> 
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_SerialNo" runat="server" Text='<%# Container.DataItemIndex + 1 %>'></asp:Label>  
+                    </ItemTemplate>
+                </asp:TemplateField>  
+
+
+                <asp:TemplateField HeaderText="Medium Name">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_mediumname" runat="server" Text='<%#Eval("MediumName") %>'></asp:Label>  
+                    </ItemTemplate>  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="txtmediumname" runat="server" Text='<%#Eval("MediumName") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                </asp:TemplateField>  
+                <asp:TemplateField HeaderText="Medium Description">  
+                    <ItemTemplate>  
+                        <asp:Label ID="lbl_mediumdescription" runat="server" Text='<%#Eval("MediumDescription") %>'></asp:Label>  
+                    </ItemTemplate>  
+                    <EditItemTemplate>  
+                        <asp:TextBox ID="txtmediumdescription" runat="server" Text='<%#Eval("MediumDescription") %>'></asp:TextBox>  
+                    </EditItemTemplate>  
+                </asp:TemplateField>  
+            </Columns>  
+        </asp:GridView>  
+
+            <asp:Label runat="server" ID="lblmedium"></asp:Label>
+
+
+
+
+          <%--  <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
                 <tr>
                     <th>Medium Name</th>
                     <th>Description</th>
@@ -155,9 +164,61 @@
                 </tr>
 
 
-            </table>
+            </table>--%>
 
         </div>
 
 
+
+
+
+
+    <script>
+        $(document).ready(function () {
+
+
+            $(function () {
+                var mediums = $("#<%=lblmedium.ClientID%>").text();
+                alert(mediums);
+                var splitmediums = mediums.split(",");
+                //$('#h_v').val();
+
+                var availableTags = splitmediums;
+
+                //var availableTags = [
+                //  "ActionScript",
+                //  "AppleScript",
+                //  "Asp",
+                //  "BASIC",
+                //  "C",
+                //  "C++",
+                //  "Clojure",
+                //  "COBOL",
+                //  "ColdFusion",
+                //  "Erlang",
+                //  "Fortran",
+                //  "Groovy",
+                //  "Haskell",
+                //  "Java",
+                //  "JavaScript",
+                //  "Lisp",
+                //  "Perl",
+                //  "PHP",
+                //  "Python",
+                //  "Ruby",
+                //  "Scala",
+                //  "Scheme"
+                //];
+                $("#tags").autocomplete({
+                    source: availableTags
+                });
+            });
+
+
+        });
+  </script>
+
 </asp:Content>
+
+
+
