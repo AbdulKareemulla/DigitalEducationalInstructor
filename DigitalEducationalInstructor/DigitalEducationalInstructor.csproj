@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1CommonPages\HolidayLists.aspx" />
+    <Content Include="2SchoolSetupPages\facultySubjectsSettings.aspx" />
     <Content Include="2SchoolSetupPages\SchoolWeekOffs.aspx" />
     <Content Include="2SchoolSetupPages\Medium.aspx" />
     <Content Include="8StudentPages\StudentRegistration.aspx" />
@@ -334,6 +335,13 @@
     </Compile>
     <Compile Include="1CommonPages\HolidayLists.aspx.designer.cs">
       <DependentUpon>HolidayLists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\facultySubjectsSettings.aspx.cs">
+      <DependentUpon>facultySubjectsSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\facultySubjectsSettings.aspx.designer.cs">
+      <DependentUpon>facultySubjectsSettings.aspx</DependentUpon>
     </Compile>
     <Compile Include="2SchoolSetupPages\SchoolWeekOffs.aspx.cs">
       <DependentUpon>SchoolWeekOffs.aspx</DependentUpon>
