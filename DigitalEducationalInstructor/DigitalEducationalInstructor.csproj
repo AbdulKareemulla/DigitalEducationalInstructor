@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1CommonPages\HolidayLists.aspx" />
+    <Content Include="2SchoolSetupPages\SchoolWeekOffs.aspx" />
     <Content Include="2SchoolSetupPages\Medium.aspx" />
     <Content Include="8StudentPages\StudentRegistration.aspx" />
     <Content Include="Content\font-awesome.css" />
@@ -326,6 +328,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1CommonPages\HolidayLists.aspx.cs">
+      <DependentUpon>HolidayLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1CommonPages\HolidayLists.aspx.designer.cs">
+      <DependentUpon>HolidayLists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\SchoolWeekOffs.aspx.cs">
+      <DependentUpon>SchoolWeekOffs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\SchoolWeekOffs.aspx.designer.cs">
+      <DependentUpon>SchoolWeekOffs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="2SchoolSetupPages\Medium.aspx.cs">
       <DependentUpon>Medium.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -374,7 +390,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="1CommonPages\" />
     <Folder Include="3SchoolAdminPages\" />
     <Folder Include="4PrincipalPages\" />
     <Folder Include="5HODPages\" />
