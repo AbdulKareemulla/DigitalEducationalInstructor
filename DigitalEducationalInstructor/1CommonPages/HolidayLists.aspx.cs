@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DigitalEducationalInstructor._2SchoolSetupPages
 {
-    public partial class Medium : System.Web.UI.Page
+    public partial class HolidayLists : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

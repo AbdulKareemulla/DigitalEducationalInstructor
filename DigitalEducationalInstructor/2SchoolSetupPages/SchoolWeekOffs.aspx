@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/AdmimMaster.Master" AutoEventWireup="true" CodeBehind="SchoolWeekOffs.aspx.cs" Inherits="DigitalEducationalInstructor._2SchoolSetupPages.Medium" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/AdmimMaster.Master" AutoEventWireup="true" CodeBehind="SchoolWeekOffs.aspx.cs" Inherits="DigitalEducationalInstructor._2SchoolSetupPages.SchoolWeekOffs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">

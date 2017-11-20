@@ -10,7 +10,7 @@
 namespace DigitalEducationalInstructor._2SchoolSetupPages {
     
     
-    public partial class Medium {
+    public partial class SchoolWeekOffs {
         
         /// <summary>
         /// panelSchool control.

@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DigitalEducationalInstructor._2SchoolSetupPages {
+namespace DigitalEducationalInstructor._1CommonPages {
     
     
-    public partial class Medium {
+    public partial class HolidayLists {
         
         /// <summary>
         /// panelSchool control.

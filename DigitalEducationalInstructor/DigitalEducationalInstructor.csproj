@@ -69,7 +69,6 @@
     <Content Include="1CommonPages\HolidayLists.aspx" />
     <Content Include="2SchoolSetupPages\facultySubjectsSettings.aspx" />
     <Content Include="2SchoolSetupPages\SchoolWeekOffs.aspx" />
-    <Content Include="2SchoolSetupPages\Medium.aspx" />
     <Content Include="8StudentPages\StudentRegistration.aspx" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
@@ -349,13 +348,6 @@
     </Compile>
     <Compile Include="2SchoolSetupPages\SchoolWeekOffs.aspx.designer.cs">
       <DependentUpon>SchoolWeekOffs.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="2SchoolSetupPages\Medium.aspx.cs">
-      <DependentUpon>Medium.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="2SchoolSetupPages\Medium.aspx.designer.cs">
-      <DependentUpon>Medium.aspx</DependentUpon>
     </Compile>
     <Compile Include="2SchoolSetupPages\SchoolRegistration.aspx.cs">
       <DependentUpon>SchoolRegistration.aspx</DependentUpon>
