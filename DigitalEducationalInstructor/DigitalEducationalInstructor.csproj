@@ -372,9 +372,9 @@
     <Folder Include="js\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BAL\BAL.csproj">
-      <Project>{40a0c682-03bc-4b05-8b01-1376df900edb}</Project>
-      <Name>BAL</Name>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{D201EE2E-8643-43BA-8C43-B70C82815C8D}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
