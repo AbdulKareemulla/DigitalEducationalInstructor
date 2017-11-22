@@ -39,11 +39,12 @@ namespace DAL
         public string Sch_Name { get; set; }
         public string Sch_Code { get; set; }
         public string Sch_Contact_Person { get; set; }
-        public Nullable<int> Sch_Type_Id { get; set; }
-        public Nullable<int> Sch_CountryId { get; set; }
-        public Nullable<int> Sch_StateId { get; set; }
-        public Nullable<int> Sch_DistrictId { get; set; }
+        public string Sch_Type_Id { get; set; }
+        public string Sch_CountryId { get; set; }
+        public string Sch_StateId { get; set; }
+        public string Sch_DistrictId { get; set; }
         public string Sch_DistrictName { get; set; }
+        public string Landmark { get; set; }
         public Nullable<int> Sch_CityId { get; set; }
         public string Sch_CityName { get; set; }
         public Nullable<int> Sch_PINCode { get; set; }

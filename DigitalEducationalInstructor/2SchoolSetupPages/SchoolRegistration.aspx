@@ -53,13 +53,13 @@
             <div class="divTableBody">
                 <div class="divTableRow" style="width: 100%">
                     <div class="divTableCell" style="width: 50%">
-                        <asp:Panel ID="panelSchool" GroupingText="Institution Details" runat="server">
+                        <asp:Panel ID="panelSchool" GroupingText="Institution Details" runat="server" Font-Bold="True">
 
                             <div class="divTable">
                                 <div class="divTableBody">
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblInstName" runat="server" Text="Institute Name"></asp:Label>
+                                            <asp:Label ID="lblInstName" runat="server" Text="Institute Name" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:TextBox ID="txtInstName" runat="server"></asp:TextBox>
@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblInstCode" runat="server" Text="Institute Code"></asp:Label>
+                                            <asp:Label ID="lblInstCode" runat="server" Text="Institute Code" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:TextBox ID="txtInstCode" runat="server"></asp:TextBox>
@@ -75,7 +75,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblInstType" runat="server" Text="Institute Type"></asp:Label>
+                                            <asp:Label ID="lblInstType" runat="server" Text="Institute Type" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:DropDownList ID="ddlInstType" runat="server"></asp:DropDownList>
@@ -83,7 +83,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblAffilUniversity" runat="server" Text="Affiliated University"></asp:Label>
+                                            <asp:Label ID="lblAffilUniversity" runat="server" Text="Affiliated University" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:DropDownList ID="ddlAffilUniversity" runat="server"></asp:DropDownList>
@@ -91,10 +91,10 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblSector" runat="server" Text="Institute Sector Type"></asp:Label>
+                                            <asp:Label ID="lblSector" runat="server" Text="Institute Sector Type" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:RadioButtonList ID="radioSector" runat="server">
+                                            <asp:RadioButtonList ID="radioSector" runat="server" Font-Bold="False">
                                                 <asp:ListItem Text="Private" Value="pvt" Selected="True"></asp:ListItem>
                                                 <asp:ListItem Text="Government" Value="govt"></asp:ListItem>
                                             </asp:RadioButtonList>
@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblStdRange" runat="server" Text="Students Capacity"></asp:Label>
+                                            <asp:Label ID="lblStdRange" runat="server" Text="Students Capacity" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:DropDownList ID="ddlStudentRange" runat="server"></asp:DropDownList>
@@ -114,12 +114,12 @@
                         </asp:Panel>
                     </div>
                     <div class="divTableCell" style="width: 50%">
-                        <asp:Panel ID="panelAddress" runat="server" GroupingText="Institution Address">
+                        <asp:Panel ID="panelAddress" runat="server" GroupingText="Institution Address" Font-Bold="True">
                             <div class="divTable">
                                 <div class="divTableBody">
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblCountry" runat="server" Text="Country"></asp:Label>
+                                            <asp:Label ID="lblCountry" runat="server" Text="Country" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:DropDownList ID="ddlCountry" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCountry_SelectedIndexChanged"></asp:DropDownList>
@@ -127,7 +127,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblState" runat="server" Text="State"></asp:Label>
+                                            <asp:Label ID="lblState" runat="server" Text="State" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:DropDownList ID="ddlState" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlState_SelectedIndexChanged"></asp:DropDownList>
@@ -135,7 +135,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblDistrict" runat="server" Text="District"></asp:Label>
+                                            <asp:Label ID="lblDistrict" runat="server" Text="District" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:DropDownList ID="ddlDistrict" runat="server"></asp:DropDownList>
@@ -143,7 +143,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
+                                            <asp:Label ID="lblCity" runat="server" Text="City" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
@@ -151,7 +151,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblPinCode" runat="server" Text="PinCode"></asp:Label>
+                                            <asp:Label ID="lblPinCode" runat="server" Text="PinCode" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:TextBox ID="txtPincode" MaxLength="10" runat="server" onkeypress="return numeric(event);"></asp:TextBox>
@@ -160,7 +160,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblAddress1" runat="server" Text="Address1"></asp:Label>
+                                            <asp:Label ID="lblAddress1" runat="server" Text="Address1" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:TextBox ID="txtAddress1" runat="server"></asp:TextBox>
@@ -168,7 +168,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblAddress2" runat="server" Text="Address2"></asp:Label>
+                                            <asp:Label ID="lblAddress2" runat="server" Text="Address2" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:TextBox ID="txtAddress2" runat="server"></asp:TextBox>
@@ -176,7 +176,7 @@
                                     </div>
                                     <div class="divTableRow">
                                         <div class="divTableCell">
-                                            <asp:Label ID="lblLandMark" runat="server" Text="LandMark"></asp:Label>
+                                            <asp:Label ID="lblLandMark" runat="server" Text="LandMark" Font-Bold="False"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
                                             <asp:TextBox ID="txtLandMark" runat="server"></asp:TextBox>
@@ -195,7 +195,7 @@
             <div class="divTableBody">
                 <div class="divTableRow" style="width: 100%">
                     <div class="divTableCell">
-                        <asp:Panel ID="panelContactDetails" runat="server" GroupingText="Contact Details">
+                        <asp:Panel ID="panelContactDetails" runat="server" GroupingText="Contact Details" Font-Bold="True">
                             <div class="divTable">
                                 <div class="divTableBody">
                                     <div class="divTableRow">
@@ -204,7 +204,7 @@
                                                 <div class="divTableBody">
                                                     <div class="divTableRow">
                                                         <div class="divTableCell">
-                                                            <asp:Label ID="lblInstEmail" runat="server" Text="Institution Email Id"></asp:Label>
+                                                            <asp:Label ID="lblInstEmail" runat="server" Text="Institution Email Id" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
                                                             <asp:TextBox ID="txtInstEmailId" runat="server" onfocusout="ValidateEmail(this.value)"></asp:TextBox>
@@ -212,7 +212,7 @@
                                                     </div>
                                                     <div class="divTableRow">
                                                         <div class="divTableCell">
-                                                            <asp:Label ID="lblInstPhNo" runat="server" Text="Institution Phone No"></asp:Label>
+                                                            <asp:Label ID="lblInstPhNo" runat="server" Text="Institution Phone No" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
                                                             <asp:TextBox ID="txtInstPhNo" runat="server" MaxLength="12"  onkeypress="return numeric(event);"></asp:TextBox>
@@ -220,7 +220,7 @@
                                                     </div>
                                                     <div class="divTableRow">
                                                         <div class="divTableCell">
-                                                            <asp:Label ID="lblInstAlternateNo" runat="server" Text="Alternate Ph.No"></asp:Label>
+                                                            <asp:Label ID="lblInstAlternateNo" runat="server" Text="Alternate Ph.No" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
                                                             <asp:TextBox ID="txtAlternatePhNo" MaxLength="12"  onkeypress="return numeric(event);" runat="server"></asp:TextBox>
@@ -234,7 +234,7 @@
                                                 <div class="divTableBody">
                                                     <div class="divTableRow">
                                                         <div class="divTableCell">
-                                                            <asp:Label ID="lblVontactPersonName" runat="server" Text="Contact Person"></asp:Label>
+                                                            <asp:Label ID="lblVontactPersonName" runat="server" Text="Contact Person" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
                                                             <asp:TextBox ID="txtContactPerson" runat="server"></asp:TextBox>
@@ -242,7 +242,7 @@
                                                     </div>
                                                     <div class="divTableRow">
                                                         <div class="divTableCell">
-                                                            <asp:Label ID="lblPhNo" runat="server" Text="Ph.No"></asp:Label>
+                                                            <asp:Label ID="lblPhNo" runat="server" Text="Ph.No" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
                                                             <asp:TextBox ID="txtPhNo" MaxLength="12"  onkeypress="return numeric(event);" runat="server"></asp:TextBox>
@@ -251,7 +251,7 @@
                                                     </div>
                                                     <div class="divTableRow">
                                                         <div class="divTableCell">
-                                                            <asp:Label ID="lblOtp" runat="server" Text="OTP"></asp:Label>
+                                                            <asp:Label ID="lblOtp" runat="server" Text="OTP" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
                                                             <asp:TextBox ID="txtOTP" runat="server"></asp:TextBox>
@@ -259,7 +259,7 @@
                                                     </div>
                                                     <div class="divTableRow">
                                                         <div class="divTableCell">
-                                                            <asp:Label ID="lblHowToReach" runat="server" Text="How can we reach you?"></asp:Label>
+                                                            <asp:Label ID="lblHowToReach" runat="server" Text="How can we reach you?" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
                                                             <asp:DropDownList ID="ddlHowToReach" runat="server">
@@ -271,10 +271,10 @@
                                                     </div>
                                                     <div class="divTableRow">
                                                         <div class="divTableCell">
-                                                            <asp:Label ID="lblDemoRequired" runat="server" Text="Would you like to have a Demo?"></asp:Label>
+                                                            <asp:Label ID="lblDemoRequired" runat="server" Text="Would you like to have a Demo?" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:RadioButtonList ID="radioDemoRequired" runat="server">
+                                                            <asp:RadioButtonList ID="radioDemoRequired" runat="server" Font-Bold="False">
                                                                 <asp:ListItem Text="Yes" Value="1" Selected="True"></asp:ListItem>
                                                                 <asp:ListItem Text="No" Value="0"></asp:ListItem>
                                                             </asp:RadioButtonList>
@@ -299,10 +299,10 @@
             <div class="divTableBody">
                 <div class="divTableRow" style="width: 100%">
                     <div class="divTableCell" style="text-align: end">
-                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                     </div>
                     <div class="divTableCell" style="text-align: start">
-                        <asp:Button ID="btnClear" runat="server" Text="Clear" />
+                        <asp:Button ID="btnClear" runat="server" Text="Clear" OnClick="btnClear_Click" />
                     </div>
                 </div>
             </div>
