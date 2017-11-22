@@ -5,6 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
+    <script src="../1CommonPages/JS/CommonValidationJS.js"></script>
+
     <style>
         .divTable {
             display: table;
@@ -119,7 +122,7 @@
                                             <asp:Label ID="lblCountry" runat="server" Text="Country"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:DropDownList ID="ddlCountry" runat="server"></asp:DropDownList>
+                                            <asp:DropDownList ID="ddlCountry" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCountry_SelectedIndexChanged"></asp:DropDownList>
                                         </div>
                                     </div>
                                     <div class="divTableRow">
@@ -127,7 +130,7 @@
                                             <asp:Label ID="lblState" runat="server" Text="State"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:DropDownList ID="ddlState" runat="server"></asp:DropDownList>
+                                            <asp:DropDownList ID="ddlState" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlState_SelectedIndexChanged"></asp:DropDownList>
                                         </div>
                                     </div>
                                     <div class="divTableRow">
@@ -151,7 +154,7 @@
                                             <asp:Label ID="lblPinCode" runat="server" Text="PinCode"></asp:Label>
                                         </div>
                                         <div class="divTableCell">
-                                            <asp:TextBox ID="txtPincode" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtPincode" MaxLength="10" runat="server" onkeypress="return numeric(event);"></asp:TextBox>
 
                                         </div>
                                     </div>
@@ -204,7 +207,7 @@
                                                             <asp:Label ID="lblInstEmail" runat="server" Text="Institution Email Id"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:TextBox ID="txtInstEmailId" runat="server"></asp:TextBox>
+                                                            <asp:TextBox ID="txtInstEmailId" runat="server" onfocusout="ValidateEmail(this.value)"></asp:TextBox>
                                                         </div>
                                                     </div>
                                                     <div class="divTableRow">
@@ -212,7 +215,7 @@
                                                             <asp:Label ID="lblInstPhNo" runat="server" Text="Institution Phone No"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:TextBox ID="txtInstPhNo" runat="server"></asp:TextBox>
+                                                            <asp:TextBox ID="txtInstPhNo" runat="server" MaxLength="12"  onkeypress="return numeric(event);"></asp:TextBox>
                                                         </div>
                                                     </div>
                                                     <div class="divTableRow">
@@ -220,7 +223,7 @@
                                                             <asp:Label ID="lblInstAlternateNo" runat="server" Text="Alternate Ph.No"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:TextBox ID="txtAlternatePhNo" runat="server"></asp:TextBox>
+                                                            <asp:TextBox ID="txtAlternatePhNo" MaxLength="12"  onkeypress="return numeric(event);" runat="server"></asp:TextBox>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -242,7 +245,7 @@
                                                             <asp:Label ID="lblPhNo" runat="server" Text="Ph.No"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:TextBox ID="txtPhNo" runat="server"></asp:TextBox>
+                                                            <asp:TextBox ID="txtPhNo" MaxLength="12"  onkeypress="return numeric(event);" runat="server"></asp:TextBox>
                                                             <asp:Button ID="btnReSendOTP" runat="server" Text="Re-Send" />
                                                         </div>
                                                     </div>

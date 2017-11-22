@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1CommonPages\HolidayLists.aspx" />
+    <Content Include="1CommonPages\JS\CommonValidationJS.js" />
     <Content Include="2SchoolSetupPages\facultySubjectsSettings.aspx" />
     <Content Include="2SchoolSetupPages\SchoolWeekOffs.aspx" />
     <Content Include="8StudentPages\StudentRegistration.aspx" />
@@ -130,7 +131,14 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="packages.config" />
+    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
     <Content Include="TeamImpNotes\Ideas_PendingItems.xlsx" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

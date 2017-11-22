@@ -12,9 +12,9 @@ namespace DAL
     using System;
     using System.Collections.Generic;
     
-    public partial class tblBaseCountry
+    public partial class tblBaseCountries
     {
-        public tblBaseCountry()
+        public tblBaseCountries()
         {
             this.tblBasePhoneCountryCodes = new HashSet<tblBasePhoneCountryCode>();
             this.tblSchoolDetails = new HashSet<tblSchoolDetail>();

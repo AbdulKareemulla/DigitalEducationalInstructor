@@ -64,7 +64,7 @@ namespace DAL
         public string HowDemo { get; set; }
         public string ContactPreference { get; set; }
     
-        public virtual tblBaseCountry tblBaseCountry { get; set; }
+        public virtual tblBaseCountries tblBaseCountry { get; set; }
         public virtual tblBaseSchoolCollegeType tblBaseSchoolCollegeType { get; set; }
         public virtual tblBaseState tblBaseState { get; set; }
         public virtual ICollection<tblClassSectionTimeTable> tblClassSectionTimeTables { get; set; }

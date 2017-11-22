@@ -33,7 +33,7 @@ namespace DAL
         public DbSet<tblBaseClassesBasedonSchoolType> tblBaseClassesBasedonSchoolTypes { get; set; }
         public DbSet<tblBaseComplaintMesg> tblBaseComplaintMesgs { get; set; }
         public DbSet<tblBaseConstant> tblBaseConstants { get; set; }
-        public DbSet<tblBaseCountry> tblBaseCountries { get; set; }
+        public DbSet<tblBaseCountries> tblBaseCountries { get; set; }
         public DbSet<tblBaseDeptsInSchool> tblBaseDeptsInSchools { get; set; }
         public DbSet<tblBaseDistrict> tblBaseDistricts { get; set; }
         public DbSet<tblBaseErrorMessage> tblBaseErrorMessages { get; set; }

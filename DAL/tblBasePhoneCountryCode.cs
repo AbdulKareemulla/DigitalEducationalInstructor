@@ -22,6 +22,6 @@ namespace DAL
         public string Sch_Ph_CountryCode { get; set; }
         public bool Record_Status { get; set; }
     
-        public virtual tblBaseCountry tblBaseCountry { get; set; }
+        public virtual tblBaseCountries tblBaseCountry { get; set; }
     }
 }
