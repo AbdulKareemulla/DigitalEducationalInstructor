@@ -69,12 +69,14 @@
     <Content Include="1CommonPages\HolidayLists.aspx" />
     <Content Include="1CommonPages\JS\CommonValidationJS.js" />
     <Content Include="2SchoolSetupPages\facultySubjectsSettings.aspx" />
+    <Content Include="2SchoolSetupPages\Medium.aspx" />
     <Content Include="2SchoolSetupPages\SchoolWeekOffs.aspx" />
     <Content Include="8StudentPages\StudentRegistration.aspx" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="CSS\DigitalEductaionalInstructor.css" />
     <Content Include="CSS\font-awesome.css" />
+    <Content Include="CSS\jquery-ui.css" />
     <Content Include="CSS\Raleway.css" />
     <Content Include="CSS\w3School.css" />
     <Content Include="2SchoolSetupPages\SchoolRegistration.aspx" />
@@ -122,6 +124,8 @@
     <Content Include="HTML\Gallery\img\demo\slide_31.jpg" />
     <Content Include="HTML\Gallery\img\grad-black-hover.svg" />
     <Content Include="HTML\Gallery\img\grad-black.svg" />
+    <Content Include="js\jquery-1.12.4.js" />
+    <Content Include="js\jquery-ui.js" />
     <Content Include="MasterPages\AdmimMaster.Master" />
     <Content Include="Latest DatabaseBackup\SMSAppDB.bak" />
     <Content Include="fonts\FontAwesome.otf" />
@@ -350,6 +354,12 @@
     <Compile Include="2SchoolSetupPages\facultySubjectsSettings.aspx.designer.cs">
       <DependentUpon>facultySubjectsSettings.aspx</DependentUpon>
     </Compile>
+    <Compile Include="2SchoolSetupPages\Medium.aspx.cs">
+      <DependentUpon>Medium.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\Medium.aspx.designer.cs">
+      <DependentUpon>Medium.aspx</DependentUpon>
+    </Compile>
     <Compile Include="2SchoolSetupPages\SchoolWeekOffs.aspx.cs">
       <DependentUpon>SchoolWeekOffs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -407,7 +417,6 @@
     <Folder Include="HTML\Gallery\js\" />
     <Folder Include="HTML\Gallery\menu\" />
     <Folder Include="HTML\Gallery\theme\" />
-    <Folder Include="js\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
