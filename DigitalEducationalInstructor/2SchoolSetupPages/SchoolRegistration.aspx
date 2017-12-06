@@ -1,9 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SchoolRegistration.aspx.cs" Inherits="DigitalEducationalInstructor._2SchoolSetupPages.SchoolRegistration" %>
+﻿<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SchoolRegistration.aspx.cs" Inherits="DigitalEducationalInstructor._2SchoolSetupPages.SchoolRegistration" %>--%>
 
-<!DOCTYPE html>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/AdmimMaster.Master" AutoEventWireup="true" MaintainScrollPositionOnPostback="true" CodeBehind="SchoolRegistration.aspx.cs" Inherits="DigitalEducationalInstructor._2SchoolSetupPages.SchoolRegistration" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title></title>
 
     <script src="../1CommonPages/JS/CommonValidationJS.js"></script>
@@ -45,9 +44,16 @@
             display: table-row-group;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <link href="../CSS/jquery-ui.css" rel="stylesheet" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <body>
+        <%--<form id="form1" runat="server">--%>
 
         <div class="divTable">
             <div class="divTableBody">
@@ -215,7 +221,7 @@
                                                             <asp:Label ID="lblInstPhNo" runat="server" Text="Institution Phone No" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:TextBox ID="txtInstPhNo" runat="server" MaxLength="12"  onkeypress="return numeric(event);"></asp:TextBox>
+                                                            <asp:TextBox ID="txtInstPhNo" runat="server" MaxLength="12" onkeypress="return numeric(event);"></asp:TextBox>
                                                         </div>
                                                     </div>
                                                     <div class="divTableRow">
@@ -223,7 +229,7 @@
                                                             <asp:Label ID="lblInstAlternateNo" runat="server" Text="Alternate Ph.No" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:TextBox ID="txtAlternatePhNo" MaxLength="12"  onkeypress="return numeric(event);" runat="server"></asp:TextBox>
+                                                            <asp:TextBox ID="txtAlternatePhNo" MaxLength="12" onkeypress="return numeric(event);" runat="server"></asp:TextBox>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -245,7 +251,7 @@
                                                             <asp:Label ID="lblPhNo" runat="server" Text="Ph.No" Font-Bold="False"></asp:Label>
                                                         </div>
                                                         <div class="divTableCell">
-                                                            <asp:TextBox ID="txtPhNo" MaxLength="12"  onkeypress="return numeric(event);" runat="server"></asp:TextBox>
+                                                            <asp:TextBox ID="txtPhNo" MaxLength="12" onkeypress="return numeric(event);" runat="server"></asp:TextBox>
                                                             <asp:Button ID="btnReSendOTP" runat="server" Text="Re-Send" />
                                                         </div>
                                                     </div>
@@ -524,6 +530,8 @@
             </div>
 
         </div>--%>
-    </form>
-</body>
-</html>
+        <%-- </form>--%>
+    </body>
+    </html>
+
+</asp:Content>
