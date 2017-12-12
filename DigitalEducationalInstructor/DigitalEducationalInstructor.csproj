@@ -68,7 +68,11 @@
   <ItemGroup>
     <Content Include="1CommonPages\HolidayLists.aspx" />
     <Content Include="1CommonPages\JS\CommonValidationJS.js" />
+    <Content Include="2SchoolSetupPages\ClassTimeTable_1PeriodCreation.aspx" />
+    <Content Include="2SchoolSetupPages\ClassTimeTable_2MapPeriodClassSection.aspx" />
+    <Content Include="2SchoolSetupPages\ClassTimeTable_3View.aspx" />
     <Content Include="2SchoolSetupPages\facultySubjectsSettings.aspx" />
+    <Content Include="2SchoolSetupPages\GradingSystem.aspx" />
     <Content Include="2SchoolSetupPages\Medium.aspx" />
     <Content Include="2SchoolSetupPages\SchoolWeekOffs.aspx" />
     <Content Include="8StudentPages\StudentRegistration.aspx" />
@@ -347,6 +351,27 @@
     <Compile Include="1CommonPages\HolidayLists.aspx.designer.cs">
       <DependentUpon>HolidayLists.aspx</DependentUpon>
     </Compile>
+    <Compile Include="2SchoolSetupPages\ClassTimeTable_1PeriodCreation.aspx.cs">
+      <DependentUpon>ClassTimeTable_1PeriodCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\ClassTimeTable_1PeriodCreation.aspx.designer.cs">
+      <DependentUpon>ClassTimeTable_1PeriodCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\ClassTimeTable_2MapPeriodClassSection.aspx.cs">
+      <DependentUpon>ClassTimeTable_2MapPeriodClassSection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\ClassTimeTable_2MapPeriodClassSection.aspx.designer.cs">
+      <DependentUpon>ClassTimeTable_2MapPeriodClassSection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\ClassTimeTable_3View.aspx.cs">
+      <DependentUpon>ClassTimeTable_3View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\ClassTimeTable_3View.aspx.designer.cs">
+      <DependentUpon>ClassTimeTable_3View.aspx</DependentUpon>
+    </Compile>
     <Compile Include="2SchoolSetupPages\facultySubjectsSettings.aspx.cs">
       <DependentUpon>facultySubjectsSettings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -354,8 +379,16 @@
     <Compile Include="2SchoolSetupPages\facultySubjectsSettings.aspx.designer.cs">
       <DependentUpon>facultySubjectsSettings.aspx</DependentUpon>
     </Compile>
+    <Compile Include="2SchoolSetupPages\GradingSystem.aspx.cs">
+      <DependentUpon>GradingSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2SchoolSetupPages\GradingSystem.aspx.designer.cs">
+      <DependentUpon>GradingSystem.aspx</DependentUpon>
+    </Compile>
     <Compile Include="2SchoolSetupPages\Medium.aspx.cs">
       <DependentUpon>Medium.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="2SchoolSetupPages\Medium.aspx.designer.cs">
       <DependentUpon>Medium.aspx</DependentUpon>
